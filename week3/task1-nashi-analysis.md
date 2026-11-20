@@ -18,7 +18,8 @@ Repo incelemesinde projenin yapay zekâ destekli modern bir mühendislik akış�
 ## 3. Kurulum, Çalıştırma ve Takıldığım Nokta
 - Windows için `v0.7.17-48` sürümünün `Nashi-Windows-x64.zip` (91.6 MB) paketi indirildi ve ayrı bir klasöre çıkarılıp `Nashi.exe` ile çalıştırıldı (.NET 10 self-contained olduğu için ayrıca .NET kurulumu gerekmedi).
 - **Kurulum Bulgusu:** README'de de belirtildiği gibi Windows Authenticode yayıncı imzası bulunmadığı için işletim sistemi ilk açılışta güvenlik onayı isteyebiliyor; ayrıca temel görsel/PDF işlemleri hemen çalışırken medya/Office araçları ilk açılışta ek bağımlılık indirmesi gerektiriyor.
-- **Test Edilen Özellikler:** *(Uygulamayı açıp denediğin 3 özelliği — ör. dosya ekleme & `Ctrl+Space` araç çarkı, görsel dönüştürme/kırpma, PDF veya QR okuma — ve ekran görüntünü buraya ekle.)*
+- **Otomatik Smoke-Test Bulgusu:** `windows/README.md`'de bahsedilen `Nashi.exe --smoke-test` komutu arka plan terminalinden çalıştırıldığında `System.InvalidOperationException: Native keyboard input was unavailable on this Windows desktop` hatasıyla durdu — yani test komutu gerçek bir etkileşimli masaüstü oturumu gerektiriyor; normal `Nashi.exe` ise doğrudan açılıyor.
+- **Test Edilen Özellikler:** *(Açılan `Nashi.exe` penceresinde 3 özellik deneyip `Win + Shift + S` ile aldığın ekran görüntüsünü portföyüne ve teslim formuna ekle.)*
 
 ## 4. 3 Güçlü Yan
 1. **Çift Platform & Yerel Mimari:** macOS'ta Swift, Windows'ta .NET 10 / WPF ile yerel performans sunarken ortak 27 araç / 46 format kataloğunu koruyor; kullanıcıya ayrıca web üzerinden kurulumsuz deneyebileceği etkileşimli bir playground sunuyor.
