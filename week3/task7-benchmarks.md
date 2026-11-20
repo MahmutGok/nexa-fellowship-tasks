@@ -1,6 +1,6 @@
 # Week 3 — Task 7: Benchmark İncelemeleri & Hugging Face
 
-- **Hugging Face Profili:** `https://huggingface.co/MahmutGok` *(hesap açıldıktan sonra teyit edilecek)*
+- **Hugging Face Profili:** `https://huggingface.co/GokMahm0t`
 
 ---
 
